@@ -1,0 +1,17 @@
+aside {
+  position: relative;
+}
+
+.sidebar {
+  background: white;
+  width: 390px;
+  height: 100vh;
+  box-shadow:
+    2px 0px 3px 0px rgba(0,0,0,0.1),
+    3px 0px 5px 0px rgba(0,0,0,0.1);
+}
+
+.sidebar .links {
+  padding: 0;
+  margin: 0;
+}
