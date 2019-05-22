@@ -1,9 +1,13 @@
 aside {
-  position: relative;
-  display: inline-block;
+  top: 0;
+  left: 0;
+  position: fixed;
+  max-width: 300px;
 }
 
 main {
   position: relative;
-  display: inline-block;
+  margin-left: 300px;
+  max-width: calc(100% - 300px);
+  padding: 32px;
 }
