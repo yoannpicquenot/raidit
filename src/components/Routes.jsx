@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route } from "react-router-dom";
 import Home from "../pages/Home";
+import Header from './Header';
 
 export const routes = [{
   path: '/',
@@ -11,8 +12,11 @@ export const routes = [{
 }];
 
 export default function Routes() {
-  const renderRoutes = routes.map(({key, path, component}) => (
-    <Route key={`${key}-route`} exact path={path} component={component}/>
+  const renderRoutes = routes.map(({key, path, component, name}) => (
+    <div key={`${key}-route`}>
+      <Header name={name} />
+      <Route exact path={path} component={component}/>
+    </div>
   ));
   return (
     <main>

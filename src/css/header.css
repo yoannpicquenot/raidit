@@ -1,0 +1,6 @@
+header {
+    display: flex;
+   align-items: center;
+    height: 150px;
+    max-height: 150px;
+}
