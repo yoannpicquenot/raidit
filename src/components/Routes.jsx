@@ -1,18 +1,13 @@
 import React from 'react';
 import { Route } from "react-router-dom";
 import Home from "../pages/Home";
-import Login from "../pages/Login";
 
 export const routes = [{
   path: '/',
   key: "home",
-  name: "Home",
+  name: "Hot",
   component: Home,
-}, {
-  path: '/login',
-  key: "login",
-  name: "Login",
-  component: Login,
+  icon: "whatshot"
 }];
 
 export default function Routes() {
